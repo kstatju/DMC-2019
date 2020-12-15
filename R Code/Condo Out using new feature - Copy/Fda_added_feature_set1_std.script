@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Copy/paste this job script into a text file and submit with the command:
+#    sbatch thefilename
+
+#SBATCH --time=20:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --ntasks-per-node=16   # 16 processor core(s) per node 
+#SBATCH --mem=120G   # maximum memory per node
+#SBATCH --job-name="Fda_none_add_feature_set1_std"
+#SBATCH --mail-user=kanakc@iastate.edu   # email address
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+#SBATCH --output="Fda_none_add_feature_set1_std_out" # job standard output file (%j replaced by job id)
+#SBATCH --error="Fda_none_add_feature_set1_std_err" # job standard error file (%j replaced by job id)
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+
+module load r
+R CMD BATCH Fda_cv_none_add_feature_set1_std.R Fda_cv_none_add_feature_set1_std.Log

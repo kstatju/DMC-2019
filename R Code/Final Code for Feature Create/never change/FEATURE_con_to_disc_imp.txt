@@ -1,0 +1,5 @@
+totalScanTimeInSeconds_2_discrete
+grandTotal_2_discrete
+scannedLineItemsPerSecond_2_discrete
+valuePerSecond_2_discrete
+lineItemVoidsPerPosition_2_discrete

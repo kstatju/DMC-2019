@@ -1,0 +1,3 @@
+totalScanTimeInSeconds_2_discrete
+scannedLineItemsPerSecond_2_discrete
+valuePerSecond_2_discrete
